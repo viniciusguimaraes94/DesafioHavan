@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\VINÍCIUS\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\VINÍCIUS\\.nuget\\packages"
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "a73d9f37-997e-41eb-9225-d2285f2f2846",
+		"name": "Moeda",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ObterTodos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/moeda",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"moeda"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Salvar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Descricao\": \"Real\",\r\n    \"Valor\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/moeda",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"moeda"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "10810b9e-8312-43bf-ba6c-979a3770d4b8",
+		"name": "Operacao",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ObterTodos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/operacao",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"operacao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Salvar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"valorOriginal\": 100,\r\n    \"dataOperacao\": \"2021-05-01\",\r\n    \"moedaOrigemId\": 2,\r\n    \"moedaDestinoId\": 1,\r\n    \"clienteId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/operacao",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"operacao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObterPorIntervaloDeDataECliente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/operacao/2021-05-06T00:00:00/2021-05-12T00:00:00/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"operacao",
+						"2021-05-06T00:00:00",
+						"2021-05-12T00:00:00",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
