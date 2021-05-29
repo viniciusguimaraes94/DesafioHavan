@@ -68,3 +68,68 @@ method = POST
 header ={}
 Body ={}
 ```
+
+##Retorno
+```json
+[
+    {
+        "id": 2,
+        "valorOriginal": 200.00,
+        "valorConvertido": 38.02,
+        "taxa": 3.80,
+        "dataOperacao": "2021-05-10T00:00:00",
+        "moedaOrigemId": 2,
+        "moedaDestinoId": 1,
+        "moedaOrigem": {
+            "id": 2,
+            "descricao": "Real",
+            "valor": 1.00,
+            "operacoesOrigem": [],
+            "operacoesDestino": null
+        },
+        "moedaDestino": {
+            "id": 1,
+            "descricao": "Dolar",
+            "valor": 5.26,
+            "operacoesOrigem": null,
+            "operacoesDestino": []
+        },
+        "clienteId": 1,
+        "cliente": {
+            "id": 1,
+            "nome": "Vinicius",
+            "operacoes": []
+        }
+    },
+    {
+        "id": 3,
+        "valorOriginal": 300.00,
+        "valorConvertido": 1578.00,
+        "taxa": 157.80,
+        "dataOperacao": "2021-05-08T00:00:00",
+        "moedaOrigemId": 2,
+        "moedaDestinoId": 1,
+        "moedaOrigem": {
+            "id": 2,
+            "descricao": "Real",
+            "valor": 1.00,
+            "operacoesOrigem": [],
+            "operacoesDestino": null
+        },
+        "moedaDestino": {
+            "id": 1,
+            "descricao": "Dolar",
+            "valor": 5.26,
+            "operacoesOrigem": null,
+            "operacoesDestino": []
+        },
+        "clienteId": 1,
+        "cliente": {
+            "id": 1,
+            "nome": "Vinicius",
+            "operacoes": []
+        }
+    }
+]
+```json
+
